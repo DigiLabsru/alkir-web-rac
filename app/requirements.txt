@@ -1,0 +1,11 @@
+loguru==0.6.0
+fastapi==0.115.11
+uvicorn==0.34.0
+pydantic==2.10.6
+jpype1==1.5.2
+python-multipart==0.0.20
+Jinja2==3.1.6
+pandas==2.1.4
+flake8
+autopep8
+certifi

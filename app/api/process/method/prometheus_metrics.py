@@ -1,0 +1,38 @@
+labels_list: list = [
+    "lic_full_name",
+    "lic_full_presentation",
+    "lic_license_type",
+    "lic_max_users_all",
+    "lic_max_users_cur",
+    "lic_rmngr_address",
+    "lic_rmngr_pid",
+    "lic_rmngr_port",
+    "lic_series",
+    "lic_short_presentation",
+    "lic_issued_by_server",
+    "lic_net",
+    "host_name",
+    "licenses",
+    "main_port",
+    "pid",
+    "running",
+    "started_at",
+    "use",
+    "working_process_id",
+    "is_enable",
+    "is_reserve"
+]
+metrics_list = [
+    "selection_size",
+    "memory_excess_time",
+    "memory_size",
+    "available_perfomance",
+    "avg_back_call_time",
+    "avg_call_time",
+    "avg_db_call_time",
+    "avg_lock_call_time",
+    "avg_server_call_time",
+    "avg_threads",
+    "capacity",
+    "connections"
+]

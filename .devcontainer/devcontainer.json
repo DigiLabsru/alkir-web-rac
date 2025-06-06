@@ -1,0 +1,109 @@
+{
+	"name": "alkir-web-rac",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"wholroyd.jinja",
+				"adpyke.vscode-sql-formatter",
+				"streetsidesoftware.code-spell-checker",
+				"streetsidesoftware.code-spell-checker-russian",
+				"humao.rest-client",
+				"KevinRose.vsc-python-indent",
+				"ms-python.debugpy",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"magicstack.MagicPython",
+				"ms-python.isort",
+				"mhutchie.git-graph",
+				"ms-python.flake8",
+				"ms-python.autopep8"
+			],
+			"settings": {
+				"telemetry.telemetryLevel": "off",
+				"editor.bracketPairColorization.enabled": true,
+				"editor.matchBrackets": "always",
+				"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+				"editor.guides.bracketPairs": true,
+				"editor.language.colorizedBracketPairs": [
+					[
+						"[",
+						"]"
+					],
+					[
+						"(",
+						")"
+					],
+					[
+						"{",
+						"}"
+					]
+				],
+				"remote.localPortHost": "allInterfaces",
+				"files.autoGuessEncoding": true,
+				"git.autofetch": true,
+				"sql-formatter.uppercase": true,
+				"editor.formatOnSave": true,
+				"flake8.args": [
+					"--config",
+					".flake8"
+				],
+				"autopep8.args": [
+					"--max-line-length=200",
+					"--indent-size=4"
+				],
+				"[python]": {
+					"editor.defaultFormatter": "ms-python.autopep8",
+					"editor.formatOnSave": true,
+					"editor.codeActionsOnSave": {}
+				},
+				"python.languageServer": "Pylance",
+				"python.defaultInterpreterPath": "/usr/local/bin/python3",
+				"python.analysis.diagnosticMode": "openFilesOnly",
+				"python.analysis.autoImportCompletions": true,
+				"python.analysis.typeCheckingMode": "off",
+				"python.analysis.inlayHints.variableTypes": true,
+				"python.analysis.inlayHints.functionReturnTypes": true,
+				"python.linting.enabled": true,
+				"python.terminal.activateEnvironment": true,
+				"isort.args": [
+					"--profile",
+					"black"
+				],
+				"files.exclude": {
+					"**/.git": true,
+					"**/__pycache__": true,
+					"**/.DS_Store": true,
+					"**/Thumbs.db": true
+				},
+				"files.watcherExclude": {
+					"**/.git/objects/**": true,
+					"**/.git/subtree-cache/**": true,
+					"**/node_modules/*/**": true,
+					"**/.hg/store/**": true,
+					"**/__pycache__/**": true,
+					"**/.venv-*/**": true
+				},
+				"files.enableTrash": false,
+				"cSpell.language": "en,ru",
+				"cSpell.words": [
+					"alkir",
+					"Clickhouse",
+					"fastapi",
+					"jsonify",
+					"loguru",
+					"resultdata",
+					"Usermessage",
+					"автообнаружения"
+				]
+			}
+		}
+	},
+	"forwardPorts": [
+		8000
+	]
+}

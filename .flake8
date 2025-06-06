@@ -1,0 +1,5 @@
+[flake8]
+count = True
+max-line-length = 200
+; exclude =
+; per-file-ignores =

@@ -1,0 +1,11 @@
+@host = http://localhost:8000/v1/
+
+############
+POST {{host}} HTTP/1.1
+content-type: application/json
+
+{
+    "login": "2",
+    "pwd": "1"
+}
+
