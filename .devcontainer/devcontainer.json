@@ -1,5 +1,5 @@
 {
-	"name": "alkir-web-rac",
+	"name": "alkir-web-rac-public",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": ".."
