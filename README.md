@@ -10,7 +10,7 @@ Alkir-web-rac реализует jsonrpc интерфейс к 1С RAS (Remote A
 ## Запуск
 Запуск крайне прост
 ```
-docker run -d -p 8000:8000 -m 500m --name=alkir-web-rac --restart=always alkir-web-rac
+docker run dockerhub.alkir.ru/alkir-web-rac -d -p 8000:8000 -m 500m --name=alkir-web-rac --restart=always alkir-web-rac
 ```
 где:
  - -d - запуск в фоновом режиме (отдает управление обратно в консоль)
