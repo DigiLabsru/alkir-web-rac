@@ -5,6 +5,7 @@ from .....schemas.request import NewAdmin, NewCluster
 
 class Cluster():
     def java_unreg_cluster_admin(self, remove_admin_name):
+        self.authenticate()
         return self.connection.unregClusterAdmin(self.cluster_id, remove_admin_name)
 
     def java_get_clusters(self):
